@@ -32,12 +32,13 @@ export default function ajax (url, data={}, type='GET') {
         promise.then(function (responce){
             //成功了调用resolve()
 
-            resolve(respon.data)
-        }).catch(function (error) {
-            //失败了调用reject()
-
-            reject(error)
+            resolve(responce.data)
         })
+            .catch(function (error) {
+                //失败了调用reject()
+
+                reject(error)
+            })
 
         
     })

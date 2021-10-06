@@ -14,9 +14,10 @@
   export default {
     props: {
         title: String
-    }
+    },
+
   }
-</script>
+</script> 
 
 <style lang="stylus" rel="stylesheet/stylus"> 
   .header
